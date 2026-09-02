@@ -24,24 +24,3 @@ output:
     dev: svg
 urlcolor: blue
 ---
-
-```{r setup, include=FALSE}
-# Get GitHub username
-if (.Platform$OS.type == "unix") {
-  git_remote <- system('git config --get remote.origin.url', intern = TRUE)
-  git_user <- (strsplit(git_remote, "assignment-1-") |> unlist())[2]
-} else {
-  git_remote <- shell('git config --get remote.origin.url', intern = TRUE)
-  git_user <- (strsplit(git_remote, "assignment-1-") |> unlist())[2]
-}
-```
-
----
-subtitle: "GitHub username: `r git_user`"
----
-
-<!-- Write your Markdown below this line -->
-
-
-
-
